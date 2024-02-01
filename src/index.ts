@@ -22,6 +22,7 @@ const main = async () => {
     const fuseSDK = await FuseSDK.init(publicApiKey, credentials, {
       withPaymaster: true,
     });
+    console.log(`Smart Contract wallet address: ${fuseSDK.wallet.getSender()}`);
 
     // You can use any other "to" address and any other "value"
     // MTK Token
